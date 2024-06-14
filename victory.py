@@ -6,7 +6,7 @@ Lermontov = 1814
 Dostoevsky = 1821
 Tolstoy = 1828
 
-# Счётччик верных и неверных ответов
+# Счётччики верных и неверных ответов
 correct_answer = 0
 incorrect_answer = 0
 correct_answer_2 = 0
