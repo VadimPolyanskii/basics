@@ -6,7 +6,7 @@ Lermontov = 1814
 Dostoevsky = 1821
 Tolstoy = 1828
 
-# Счётччики верных и неверных ответов
+# Счётчики верных и неверных ответов
 correct_answer = 0
 incorrect_answer = 0
 correct_answer_2 = 0
@@ -15,7 +15,9 @@ incorrect_answer_2 = 0
 
 print("Игра 'Викторина'")
 print("----------------------")
+
 while True:
+
     Pushkin_answer = int(input("Назовите год рождения А.С.Пушкина: "))                  # 1799
     if Pushkin_answer == Pushkin:
         correct_answer += 1
@@ -55,10 +57,12 @@ while True:
     print("Процент неправильных ответов:", incorrect_answer * 100/5)
 
     print()
-    continue_game = input("Желаете сыграть ещё раз? Ответьте 'Да' или 'Нет': ")
 
-    print()
-    if continue_game == "Да" or "да":
+    continue_game = input("Желаете сыграть ещё раз? Ответьте 'да' или 'нет': ")
+
+    print("----------------------")
+
+    if continue_game == "Да" or continue_game == "да":
         Pushkin_answer = int(input("Назовите год рождения А.С.Пушкина: "))  # 1799
         if Pushkin_answer == Pushkin:
             correct_answer_2 += 1
@@ -98,6 +102,11 @@ while True:
         print("Игра окончена")
         break
 
-    else:
+    elif continue_game == 'Нет' or continue_game == 'нет':
         print("Игра окончена")
         break
+
+    else:
+        print("Некорректный ответ. Игра окончена")
+        break
+
